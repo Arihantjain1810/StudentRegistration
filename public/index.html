@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Student Registration System</h1>
+    <p class="intro">Register student details</p>
+
+    <div class="container">
+
+        <h2>Student Registration Form</h2>
+
+        <form id="studentForm">
+
+            <label>Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <small id="nameError"></small>
+
+            <label>Roll Number:</label>
+            <input type="text" id="rollNo" placeholder="Enter roll number">
+            <small id="rollNoError"></small>
+
+            <label>Email:</label>
+            <input type="text" id="email" placeholder="Enter email">
+            <small id="emailError"></small>
+
+            <label>Phone Number:</label>
+            <input type="text" id="phone" placeholder="Enter phone number">
+            <small id="phoneError"></small>
+
+            <label>Course:</label>
+            <select id="course">
+                <option value="">Select Course</option>
+                <option value="AIML">AIML</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Cyber Security">Cyber Security</option>
+            </select>
+            <small id="courseError"></small>
+
+            <button type="submit">Register Student</button>
+
+            <p id="message"></p>
+
+        </form>
+
+    </div>
+
+    <div class="container">
+
+        <h2>Registered Students</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll Number</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Course</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentList">
+                <tr>
+                    <td colspan="5">No students registered yet.</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
